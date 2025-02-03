@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main()
+{
+  int amount=5000;
+  printf("enter 1:Account Balance\n enter 2: Amount Withdrawal\n enter 3: Amount Deposite");
+  while(1){
+    printf("Enter your choice(1 to 3):");
+  int ch,rs;
+  scanf("%d",&ch);
+    if(ch==1){
+      printf("Account Balance %d",amount);
+      }
+      else if(ch==2){
+        printf("Enter the amount to withdrawal:");
+        scanf("%d",&rs);
+        if(rs>amount){
+          printf("Insufficient Balance");
+        }
+        else{
+          amount=amount-rs;
+          printf("Account Balance:%d\n",amount);
+        }
+      }
+      else if(ch==3){
+        printf("enter the amount to deposite:");
+        scanf("%d",&rs);
+        amount=amount+rs;
+        printf("Account Balance:%d\n",amount);
+      }
+    else{
+      printf("Invalid choice");
+    }
+    printf("do you want to continue(Type y to continue):");
+    char s;
+    scanf("%c",&s);
+    if(s!='y'){
+      printf("Thank you!");
+      break;
+    }
+  }
+  
+}
