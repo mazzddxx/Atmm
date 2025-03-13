@@ -1,0 +1,129 @@
+#include<stdio.h>
+int main(){
+printf("\t * PETROL MANAGEMENT SYSTEM  *\n");
+printf("\n");
+int a,b,c,d,e,f,g,h,i,j,k,l,m;
+char ch;
+printf("*ENTER 1 -> TO FILL PETROL\n");
+printf("*ENTER 2 -> TO FILL DIESEL \n");
+printf("*ENTER 3 -> TO FILL CNG GAS\n");
+printf("*ENTER 4 -> TYRE INFLATOR\n");
+printf("*ENTER 5 -> SERVICE \n");
+printf("\n");
+printf("\n");
+printf ("Enter your choice : ");
+scanf("%d",&a);
+switch(a){
+case 1:printf("\n\n");
+printf("1 litre petrol =Rs 75.00\n");
+printf("How much litre You Want?  = ");
+scanf("%d",&b);
+c=b*75.00;
+printf("\n");
+printf("Your Bill is =RS. %d\n",c);
+printf("\n");
+printf("How Would you like to pay?\n");
+printf("*PRESS 1 for CASH\n");
+printf("*PRESS 2 for CARD\n");
+scanf("%d",&d);
+if(d==1){
+printf("\n");
+printf("Payment Paid\n");
+printf("THANKS FOR COMING\n");
+}
+else if(d==2){
+    printf("Swipe your card\n");
+    printf("ENTER THE PIN: ");
+    scanf("%d",&h);
+    printf("\n");
+    printf("Payment Paid\n");
+    printf("THANKS FOR COMING\n");
+   
+}
+    break;
+    case 2:printf("Price of Diesel : RS 90.00 / litre\n");
+    printf("How much litre of diesel you want ?\n");
+    scanf("%d",&c);
+    i=c*90.00;
+    printf("\n");
+    printf("Your Bill Is = RS.%d\n",i);
+    printf("\n");
+    printf("How Would You Like To Pay ? \n");
+    printf("*Press 1 for CASH\n *Press 2 for CARD\n");
+    scanf("%d",&e);
+    if (e==1)
+    printf("Payment Success\n Thanks For Coming\n");
+    else if(e==2)
+    {
+        printf("Swipe Your Card\n");
+          printf("ENTER THE PIN: ");
+          scanf("%d",&h);
+        printf("Payment Paid\n");
+        printf("THANKS FOR COMING\n");
+        }
+        break;
+    case 3:printf("Price of CNG = Rs 70.00\n");
+    printf("How much pounds of CNG you want?\n");
+    printf("\n\n");
+    scanf("%d",&g);
+    f=g*70.00;
+    printf("\n");
+    printf("Your Bill is = RS.%d\n",f);
+    printf("\n");
+    printf("How would you like to pay?\n");
+    printf("press 1 for CASH\n press 2 for CARD\n");
+    scanf("%d",&h);
+    if(h==1)
+    printf("Payment Paid\n Thanks For Coming\n");
+    else if(h==2)
+    {
+        printf("Swipe Your Card\n");
+          printf("ENTER THE PIN: ");
+          scanf("%d",&h);
+        printf("Payment Paid\n");
+        printf("Thanks For Coming\n");
+    }
+    break;
+    case 4:printf("Price for to fill the air = Rs 30.00/Tyre\n");
+    printf("How many tyres do you want to fill the air?\n");
+    printf("\n\n");
+    scanf("%d",&j);
+    k=j*30.00;
+    printf("\n");
+    printf("Your Bill is = RS.%d\n",k);
+    printf("\n");
+    printf("How would You like to pay?n");
+    printf("Press 1 for cash\n Press 2 for card\n");
+    scanf("%d",&l);
+    if(l==1)
+   
+    printf("Payment Successful\n Thanks For Coming\n");
+    else if(l==2)
+    {
+        printf("swipe Your card\n");
+        printf("ENTER THE PIN:");
+        scanf("%d",&l);
+        printf("Payment Successful\n");
+        printf("Thanks For coming\n");
+    }
+        break;
+        case 5:printf("Price for service = Rs 100\n");
+        m=1*100;
+        printf("Your Bill is =RS. %d\n",m);
+    printf("\n");
+    printf("How would you like to pay?\n");
+    printf("Press 1 for CASH\n Press 2 for CARD\n");
+    scanf("%d",&h);
+    if(h==1)
+    printf("Payment Paid\n Thanks For Coming\n");
+    else if(h==2)
+    {
+        printf("Swipe Your Card\n");
+          printf("ENTER THE PIN: ");
+          scanf("%d",&h);
+        printf("Payment Paid\n");
+        printf("Thanks For Coming\n");
+    }
+        break;
+}
+}
